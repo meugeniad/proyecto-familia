@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Integrantes de la Familia Adams</h1>
+    {% for familiar  in familia %}
+       <li> Familiar: {{familiar.nombre}} {{familiar.apellido}}   Parentezco: {{familiar.parentezco}}  Año Nacimeinto: {{familiar.anio_nacimiento}}   Edad: {{familiar.edad}}  Fecha registro: {{familiar.fecha_registro}}</li> 
+    {% endfor %}
+</body>
+</html>
